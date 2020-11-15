@@ -74,9 +74,15 @@
             console.log("paused: " + audio.paused)
             console.log("\n") // new line to create spacing in the console for readability
 
-            // reset current time and play
-            audio.currentTime = 0
-            audio.play()
+            var isAudioPaused = audio.paused
+            if (isAudioPaused) {
+                // reset current time and play
+                audio.currentTime = 0
+                audio.play()
+            } else {
+                // stop currently playing noise
+                audio.pause()
+            }
         }
     </script>
 </html>
