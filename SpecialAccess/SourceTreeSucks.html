@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body {
+            margin: 50px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #444444;
+            padding: 10px;
+        }
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- This is Ted testing Github -->
+        <h1>SourceTree is being a bitch</h1>
+
+        <h3>Duck duck goose</h3>
+
+        <!-- Soundboard Buttons -->
+        <div id="button-grid" class="grid-container">
+            <button id="random" onclick="playNoise(this.id)" class="grid-item">Random</button>
+            <button id="duck" onclick="playNoise(this.id)" class="grid-item">Duck</button>
+            <button id="" onclick="playNoise(this.id)" class="grid-item">3</button>
+            <button id="" onclick="playNoise(this.id)" class="grid-item">4</button>
+            <button id="" onclick="playNoise(this.id)" class="grid-item">5</button>
+            <button id="" onclick="playNoise(this.id)" class="grid-item">6</button>
+            <button id="" onclick="playNoise(this.id)" class="grid-item">7</button>
+            <button id="" onclick="playNoise(this.id)" class="grid-item">8</button>
+            <button id="" onclick="playNoise(this.id)" class="grid-item">9</button>
+        </div>
+
+        <!--
+            HTML <audio> properties
+
+            currentTime	playhead position	double (seconds)
+            duration	media duration	    double (seconds); read-only
+            muted	    is volume muted?	boolean
+            paused	    is media paused?	boolean
+            volume	    volume level	    double (between 0 and 1)
+        -->
+        <audio id="duckNoise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
+        <audio id="duck1Noise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
+        <audio id="duck2Noise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
+        <audio id="duck3Noise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
+        <audio id="duck4Noise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
+        <audio id="duck5Noise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
+        <audio id="duck6Noise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
+        <audio id="duck7Noise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
+        <audio id="duck8Noise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
+    </body>
+    <script>
+        function playNoise(clicked_id) {
+            // find the audio that is associated with the button that was clicked
+            var audio = document.getElementById(clicked_id + "Noise")
+
+            // changing the volume
+            audio.volume = 0.25
+
+            // debug statements
+            console.log(audio)
+            console.log("duration: " + audio.duration)
+            console.log("volume: " + audio.volume)
+            console.log("paused: " + audio.paused)
+            console.log("\n") // new line to create spacing in the console for readability
+
+            // reset current time and play
+            audio.currentTime = 0
+            audio.play()
+        }
+    </script>
+</html>
