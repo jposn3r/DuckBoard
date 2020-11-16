@@ -7,6 +7,7 @@ function playNoise(noise) {
         console.log(audio)
         if(audio.paused) {
             audio.src = "https://bigsoundbank.com/UPLOAD/ogg/0" + Math.floor(150 + (Math.random() * 600)).toString() + ".ogg"
+            pauseAllNoises()
             audio.currentTime = 0
             audio.play()
         } else {
@@ -20,6 +21,7 @@ function playNoise(noise) {
         if (typeof audio !== undefined) {
             if (audio.paused) {
                 // reset current time and play
+                pauseAllNoises()
                 audio.currentTime = 0
                 audio.play()
             } else {
@@ -37,4 +39,10 @@ function playNoise(noise) {
             console.log("\n") // new line to create spacing in the console for readability
         }
     }
+}
+
+function pauseAllNoises() {
+    noises = document.querySelectorAll("audio");
+    console.log(noises)
+    noises.forEach(noise => noise.pause());
 }
