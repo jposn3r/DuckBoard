@@ -10,13 +10,12 @@ body {
 }
 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
     text-align: center;
 }
-
 .duckington {
     width: 100px;
 }
@@ -27,5 +26,8 @@ body {
 
 .input {
     display: block;
+}
+.active, .grid-item:hover {
+    background-color: rgba(255, 0, 0, 0.8);
 }
 /*google button states to mark buttons active or off*/
