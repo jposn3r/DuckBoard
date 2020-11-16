@@ -19,16 +19,17 @@
             <img id="goosington" class="goosington" src="images/goose-favicon.png" onclick="playNoise(this)"/>
 
             <!-- Soundboard Buttons -->
+            <!-- TODO: hook up buttons 4-9 to different sounds  -->
             <div id="button-grid" class="grid-container">
                 <button id="random" onclick="playNoise(this)" class="grid-item">Random</button>
                 <button id="duck" onclick="playNoise(this)" class="grid-item">Duck</button>
                 <button id="goose" onclick="playNoise(this)" class="grid-item">Goose</button>
-                <button id="" onclick="playNoise(this)" class="grid-item">4</button>
-                <button id="" onclick="playNoise(this)" class="grid-item">5</button>
-                <button id="" onclick="playNoise(this)" class="grid-item">6</button>
-                <button id="" onclick="playNoise(this)" class="grid-item">7</button>
-                <button id="" onclick="playNoise(this)" class="grid-item">8</button>
-                <button id="" onclick="playNoise(this)" class="grid-item">9</button>
+                <button id="tavern" onclick="playNoise(this)" class="grid-item">Tavern</button>
+                <button id="bone" onclick="playNoise(this)" class="grid-item">Bone Break</button>
+                <button id="sword" onclick="playNoise(this)" class="grid-item">Sword</button>
+                <button id="wind" onclick="playNoise(this)" class="grid-item">Strong Wind</button>
+                <button id="chain" onclick="playNoise(this)" class="grid-item">Chain</button>
+                <button id="grunt" onclick="playNoise(this)" class="grid-item">Grunt</button>
             </div>
 
             <br/>
@@ -51,11 +52,12 @@
         <audio id="duckingtonNoise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
         <audio id="randomAudio"></audio>
         <audio id="goosingtonNoise" src="https://bigsoundbank.com/UPLOAD/ogg/1829.ogg"></audio>
-        <audio id="gooseNoise" src="https://bigsoundbank.com/UPLOAD/ogg/1829.ogg"></audio>
-        <audio id="duck5Noise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
-        <audio id="duck6Noise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
-        <audio id="duck7Noise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
-        <audio id="duck8Noise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
+        <audio id="tavernNoise" src="https://bigsoundbank.com/UPLOAD/ogg/0480.ogg"></audio>
+        <audio id="boneNoise" src="https://bigsoundbank.com/UPLOAD/ogg/1408.ogg"></audio>
+        <audio id="swordNoise" src="https://bigsoundbank.com/UPLOAD/ogg/0128.ogg"></audio>
+        <audio id="windNoise" src="https://bigsoundbank.com/UPLOAD/ogg/0146.ogg"></audio>
+        <audio id="chainNoise" src="https://bigsoundbank.com/UPLOAD/ogg/0359.ogg"></audio>
+        <audio id="gruntNoise" src="https://bigsoundbank.com/UPLOAD/ogg/0486.ogg"></audio>
     </body>
     <script>
         var input = document.getElementById("input");
