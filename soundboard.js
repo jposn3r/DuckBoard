@@ -1,5 +1,4 @@
 function playNoise(noise) {
-    // find the audio that is associated with the button that was clicked
     console.log(noise)
     console.log(noise.id)
     console.log(noise.className)
@@ -7,8 +6,7 @@ function playNoise(noise) {
         var audio = document.getElementById("randomAudio")
         console.log(audio)
         if(audio.paused) {
-            var randomAudioUrl = "https://bigsoundbank.com/UPLOAD/ogg/" + Math.floor(Math.random() * 600).toString() + ".ogg"
-            audio.src = "https://bigsoundbank.com/UPLOAD/ogg/" + "0" + Math.floor(150 + (Math.random() * 600)).toString() + ".ogg"
+            audio.src = "https://bigsoundbank.com/UPLOAD/ogg/0" + Math.floor(150 + (Math.random() * 600)).toString() + ".ogg"
             audio.currentTime = 0
             audio.play()
         } else {
@@ -16,7 +14,6 @@ function playNoise(noise) {
         }
     } else {
         var audio = document.getElementById(noise.id + "Noise")
-        console.log("type: " + typeof audio)
         if(typeof audio == "undefined") {
             audio = document.getElementById(noise.className + "Noise")
         }
