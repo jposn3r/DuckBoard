@@ -13,24 +13,28 @@
             <h1>Sounds</h1>
 
             <input id="input" type="text" />
+            <button id="button" onclick="randomize()">Search</button>
             <br/>
             <h3>Duck duck goose, bitch</h3>
             <img id="duckington" class="duckington" src="duck-favicon.png" onclick="playNoise(this)"/>
             <img id="goosington" class="goosington" src="goose-favicon.png" onclick="playNoise(this)"/>
-        </center>
 
-        <!-- Soundboard Buttons -->
-        <div id="button-grid" class="grid-container">
-            <button id="random" onclick="playNoise(this)" class="grid-item">Random</button>
-            <button id="duck" onclick="playNoise(this)" class="grid-item">Duck</button>
-            <button id="" onclick="playNoise(this)" class="grid-item">3</button>
-            <button id="" onclick="playNoise(this)" class="grid-item">4</button>
-            <button id="" onclick="playNoise(this)" class="grid-item">5</button>
-            <button id="" onclick="playNoise(this)" class="grid-item">6</button>
-            <button id="" onclick="playNoise(this)" class="grid-item">7</button>
-            <button id="" onclick="playNoise(this)" class="grid-item">8</button>
-            <button id="" onclick="playNoise(this)" class="grid-item">9</button>
-        </div>
+            <!-- Soundboard Buttons -->
+            <div id="button-grid" class="grid-container">
+                <button id="random" onclick="playNoise(this)" class="grid-item">Random</button>
+                <button id="duck" onclick="playNoise(this)" class="grid-item">Duck</button>
+                <button id="" onclick="playNoise(this)" class="grid-item">3</button>
+                <button id="" onclick="playNoise(this)" class="grid-item">4</button>
+                <button id="" onclick="playNoise(this)" class="grid-item">5</button>
+                <button id="" onclick="playNoise(this)" class="grid-item">6</button>
+                <button id="" onclick="playNoise(this)" class="grid-item">7</button>
+                <button id="" onclick="playNoise(this)" class="grid-item">8</button>
+                <button id="" onclick="playNoise(this)" class="grid-item">9</button>
+            </div>
+
+            <div id="gifContainer"></div>
+            <div id="gifHistoryContainer"></div>
+        </center>
 
         <!--
             HTML <audio> properties
@@ -51,4 +55,15 @@
         <audio id="duck7Noise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
         <audio id="duck8Noise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
     </body>
+    <script>
+        var input = document.getElementById("input");
+        // Listen for key up event on the enter key when focused on the form
+        input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                // call the buttons onclick function - randomize()
+                document.getElementById("button").click();
+            }
+        });
+    </script>
 </html>
