@@ -5,19 +5,18 @@
         <script src="helpers.js"></script>
         <script src="soundboard.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css"/>
-        <link rel="icon" type="image/png" href="duck-favicon.png">
+        <link rel="icon" type="image/png" href="images/duck-favicon.png">
         <title>DuckBoard</title>
     </head>
     <body>
         <center>
             <h1>Sounds</h1>
-
             <input id="input" type="text" />
             <button id="button" onclick="randomize()">Search</button>
             <br/>
             <h3>Duck duck goose, bitch</h3>
-            <img id="duckington" class="duckington" src="duck-favicon.png" onclick="playNoise(this)"/>
-            <img id="goosington" class="goosington" src="goose-favicon.png" onclick="playNoise(this)"/>
+            <img id="duckington" class="duckington" src="images/duck-favicon.png" onclick="playNoise(this)"/>
+            <img id="goosington" class="goosington" src="images/goose-favicon.png" onclick="playNoise(this)"/>
 
             <!-- Soundboard Buttons -->
             <div id="button-grid" class="grid-container">
@@ -32,6 +31,9 @@
                 <button id="" onclick="playNoise(this)" class="grid-item">9</button>
             </div>
 
+            <br/>
+
+            <!-- Giphy Display -->
             <div id="gifContainer"></div>
             <div id="gifHistoryContainer"></div>
         </center>
