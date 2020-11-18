@@ -1,10 +1,10 @@
 function playNoise(noise) {
-    console.log(noise)
-    console.log(noise.id)
-    console.log(noise.className)
+    // console.log(noise)
+    // console.log(noise.id)
+    // console.log(noise.className)
     if (noise.id == "random") {
         var audio = document.getElementById("randomAudio")
-        console.log(audio)
+        // console.log(audio)
         if(audio.paused) {
             audio.src = "https://bigsoundbank.com/UPLOAD/ogg/0" + Math.floor(150 + (Math.random() * 600)).toString() + ".ogg"
             pauseAllNoises()
@@ -32,17 +32,29 @@ function playNoise(noise) {
             audio.volume = 0.25
 
             // debug statements
-            console.log(audio)
-            console.log("duration: " + audio.duration)
-            console.log("volume: " + audio.volume)
-            console.log("paused: " + audio.paused)
-            console.log("\n") // new line to create spacing in the console for readability
+            // console.log(audio)
+            // console.log("duration: " + audio.duration)
+            // console.log("volume: " + audio.volume)
+            // console.log("paused: " + audio.paused)
+            // console.log("\n") // new line to create spacing in the console for readability
         }
     }
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    console.log(this)
+    console.log(current)
+}
+
+var header = document.getElementById("button-grid");
+var btns = header.getElementsByClassName("grid-item");
+for (var i = 0; i < btns.length; i++) {btns[i].addEventListener("click", function() {
+
+    });
 }
 
 function pauseAllNoises() {
     noises = document.querySelectorAll("audio");
-    console.log(noises)
+    // console.log(noises)
     noises.forEach(noise => noise.pause());
 }

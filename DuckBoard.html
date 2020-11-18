@@ -21,7 +21,7 @@
             <!-- Soundboard Buttons -->
             <!-- TODO: hook up buttons 4-9 to different sounds  -->
             <div id="button-grid" class="grid-container">
-                <button id="random" onclick="playNoise(this)" class="grid-item" active>Random</button>
+                <button id="random" onclick="playNoise(this)" class="grid-item active">Random</button>
                 <button id="duck" onclick="playNoise(this)" class="grid-item">Duck</button>
                 <button id="goose" onclick="playNoise(this)" class="grid-item">Goose</button>
                 <button id="tavern" onclick="playNoise(this)" class="grid-item">Tavern</button>
@@ -59,26 +59,5 @@
         <audio id="chainNoise" src="https://bigsoundbank.com/UPLOAD/ogg/0359.ogg"></audio>
         <audio id="gruntNoise" src="https://bigsoundbank.com/UPLOAD/ogg/0486.ogg"></audio>
     </body>
-    <script>
-        var input = document.getElementById("input");
-        // Listen for key up event on the enter key when focused on the form
-        input.addEventListener("keyup", function(event) {
-            if (event.keyCode === 13) {
-                event.preventDefault();
-                // call the buttons onclick function - randomize()
-                document.getElementById("button").click();
-            }
-        });
-    </script>
-    <script>
-        // Add active class to the current button (highlight it)
-        var header = document.getElementById("button-grid");
-        var btns = header.getElementsByClassName("grid-item");
-            for (var i = 0; i < btns.length; i++) {btns[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-            });
-            }
-    </script>
+    
 </html>

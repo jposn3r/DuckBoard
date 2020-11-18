@@ -16,6 +16,7 @@ body {
     font-size: 30px;
     text-align: center;
 }
+
 .duckington {
     width: 100px;
 }
@@ -27,7 +28,16 @@ body {
 .input {
     display: block;
 }
+
 .active, .grid-item:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.active{
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.selected-button{
     background-color: rgba(255, 0, 0, 0.8);
 }
 /*google button states to mark buttons active or off*/
