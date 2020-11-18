@@ -41,8 +41,8 @@ function playNoise(noise) {
     }
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-    console.log(this)
+    noise.className += " active";
+    console.log(noise)
     console.log(current)
 }
 

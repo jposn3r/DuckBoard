@@ -10,7 +10,7 @@ body {
 }
 
 .grid-item {
-    background-color: rgba(0, 255, 255, 0.8);
+    background-color: rgba(0, 255, 255, 1);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
@@ -29,15 +29,10 @@ body {
     display: block;
 }
 
-.active, .grid-item:hover {
-    background-color: rgba(255, 0, 0, 0.8);
+.grid-item:hover {
+    opacity: 0.7;
 }
 
-.active{
+.active {
     background-color: rgba(255, 0, 0, 0.8);
 }
-
-.selected-button{
-    background-color: rgba(255, 0, 0, 0.8);
-}
-/*google button states to mark buttons active or off*/
