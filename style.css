@@ -36,3 +36,49 @@ body {
 .active {
     background-color: rgba(255, 0, 0, 0.8);
 }
+
+/* Style the top navigation bar */
+#topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the topnav links */
+#topnav a {
+  float: left;
+  display: block;
+  color: #55BCC9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*Style the title on the right side*/
+#topnav b {
+  float: right;
+  display: block;
+  color: #55BCC9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+#topnav a:hover {
+  background-color: #008ff5;
+  color: black;
+}
+
+/*Make the nav bar sticky?*/
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}

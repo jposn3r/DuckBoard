@@ -1,0 +1,142 @@
+/*colors: #FC4445 #3FEEE6 #55BCC9 #97CAEF #CAFAFE*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #FC4445;
+}
+
+/* Style the header */
+.header {
+  background-color: #CAFAFE;
+  padding: 20px;
+  text-align: center;
+}
+
+h1{
+  color:#FC4445;
+  font-size: 42px;
+}
+
+.subhead{
+  color:#FC4445;
+  font-size: 22px;
+}
+/* Style the top navigation bar */
+#topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the topnav links */
+#topnav a {
+  float: left;
+  display: block;
+  color: #55BCC9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*Style the title on the right side*/
+#topnav b {
+  float: right;
+  display: block;
+  color: #55BCC9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+#topnav a:hover {
+  background-color: #008ff5;
+  color: black;
+}
+
+/*Make the nav bar sticky?*/
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*WINDOW WIDTH = 1792 px*/
+/* Create three equal columns that floats next to each other */
+.column{
+  float: left;
+  background-color: #CAFAFE;
+  width: 33.33%;
+  height: 200px
+  padding: 10px;
+  margin-top: 25px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .column {
+    width: 100%;
+  }
+}
+h2{
+  text-align: center;
+}
+/* Style the footer */
+.footer {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.active {
+  background-color: #008ff5;
+}
+
+.main{
+	width: 50%;
+  border-left: 15px solid #3FEEE6;
+  border-right:15px solid #3FEEE6;
+  border-top:15px solid #3FEEE6; 
+  padding: 50px;
+	margin: auto;
+	text-align: center;
+	margin-top: 150px;
+  background-color: #55BCC9;
+}
+
+.main2{
+  width: 50%;
+  border-left: 15px solid #3FEEE6;
+  border-right:15px solid #3FEEE6;
+  border-bottom:15px solid #3FEEE6; 
+  padding: 50px;
+  margin: auto;
+  text-align: center;
+  margin-top: 0px;
+  background-color: #55BCC9;
+}
+
+.copyright{
+  margin-top: 100px;
+  color:white;
+}
+.emailus{
+  color:white;
+}
