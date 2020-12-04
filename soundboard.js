@@ -39,9 +39,9 @@ function playNoise(noise) {
             // console.log("\n") // new line to create spacing in the console for readability
         }
     }
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    noise.className += " active";
+    var current = document.getElementsByClassName("active-button");
+    current[0].className = current[0].className.replace(" active-button", "");
+    noise.className += " active-button";
     console.log(noise)
     console.log(current)
 }
