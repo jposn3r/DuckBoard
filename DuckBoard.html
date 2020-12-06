@@ -9,57 +9,60 @@
         <title>DuckBoard</title>
 
     </head>
-    <body>
+<body>
+    <div class="header">
         <h1>Duck Board Y'all</h1>
-        <div id="topnav">
-            <a class="active" href="MenuPage.html">Home</a>
-            <a href="DuckBoard.html">DuckBoard</a>
-            <a href="#Ted">Ted</a>
-            <a href="#Jake">Jake</a>
-            <a href="#Chris">Chris</a>
-            <a href="#Ross">Ross</a>
-            <a href="#Mike">Mike</a>
-            <a href="#contactus">Contact Us</a>
-            <b style="float:right">Pick Your Poison</b>
-        </div>
-        <center>
-            <h2>Sounds</h2>
-            <input id="input" type="text" />
-            <button id="button" onclick="randomize()">Search</button>
-            <br/>
-            <h3>Duck duck goose, bitch</h3>
-            <img id="duckington" class="duckington" src="images/duck-favicon.png" onclick="playNoise(this)"/>
-            <img id="goosington" class="goosington" src="images/goose-favicon.png" onclick="playNoise(this)"/>
+        <p class="subhead">Please. Regard Us.</p>  
+    </div>
+    <div id="topnav">
+        <a href="MenuPage.html">Home</a>
+        <a class = "active" href="DuckBoard.html">DuckBoard</a>
+        <a href="#Ted">Ted</a>
+        <a href="#Jake">Jake</a>
+        <a href="#Chris">Chris</a>
+        <a href="#Ross">Ross</a>
+        <a href="#Mike">Mike</a>
+        <a href="#contactus">Contact Us</a>
+        <b style="float:right">Pick Your Poison</b>
+    </div>
+    <center>
+        <h2>Sounds</h2>
+        <input id="input" type="text" />
+        <button id="button" onclick="randomize()">Search</button>
+        <br/>
+        <h3>Duck duck goose, bitch</h3>
+        <img id="duckington" class="duckington" src="images/duck-favicon.png" onclick="playNoise(this)"/>
+        <img id="goosington" class="goosington" src="images/goose-favicon.png" onclick="playNoise(this)"/>
 
-            <!-- Soundboard Buttons -->
-            <div id="button-grid" class="grid-container">
-                <button id="random" onclick="playNoise(this)" class="grid-item active-button">Random</button>
-                <button id="duck" onclick="playNoise(this)" class="grid-item">Duck</button>
-                <button id="goose" onclick="playNoise(this)" class="grid-item">Goose</button>
-                <button id="tavern" onclick="playNoise(this)" class="grid-item">Tavern</button>
-                <button id="bone" onclick="playNoise(this)" class="grid-item">Bone Break</button>
-                <button id="sword" onclick="playNoise(this)" class="grid-item">Sword</button>
-                <button id="wind" onclick="playNoise(this)" class="grid-item">Strong Wind</button>
-                <button id="chain" onclick="playNoise(this)" class="grid-item">Chain</button>
-                <button id="grunt" onclick="playNoise(this)" class="grid-item">Grunt</button>
-            </div>
+    <!-- Soundboard Buttons -->
+    <div id="button-grid" class="grid-container">
+        <button id="random" onclick="playNoise(this)" class="grid-item active-button">Random</button>
+        <button id="duck" onclick="playNoise(this)" class="grid-item">Duck</button>
+        <button id="goose" onclick="playNoise(this)" class="grid-item">Goose</button>
+        <button id="tavern" onclick="playNoise(this)" class="grid-item">Tavern</button>
+        <button id="bone" onclick="playNoise(this)" class="grid-item">Bone Break</button>
+        <button id="sword" onclick="playNoise(this)" class="grid-item">Sword</button>
+        <button id="wind" onclick="playNoise(this)" class="grid-item">Strong Wind</button>
+        <button id="chain" onclick="playNoise(this)" class="grid-item">Chain</button>
+        <button id="grunt" onclick="playNoise(this)" class="grid-item">Grunt</button>
+    </div>
 
-            <br/>
+    <br/>
 
-            <!-- Giphy Display -->
-            <div id="gifContainer"></div>
-            <div id="gifHistoryContainer"></div>
-        </center>
+    <!-- Giphy Display -->
+    <div id="gifContainer"></div>
+    <div id="gifHistoryContainer"></div>
+    </center>
 
-        <!--
-            HTML <audio> properties
+    <!--
+    HTML <audio> properties
 
-            currentTime	playhead position	double (seconds)
-            duration	media duration	    double (seconds); read-only
-            muted	    is volume muted?	boolean
-            paused	    is media paused?	boolean
-            volume	    volume level	    double (between 0 and 1)
-        -->
+    currentTime	playhead position	double (seconds)
+    duration	media duration	    double (seconds); read-only
+    muted	    is volume muted?	boolean
+    paused	    is media paused?	boolean
+    volume	    volume level	    double (between 0 and 1)
+    -->
         <audio id="duckNoise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
         <audio id="duckingtonNoise" src="https://bigsoundbank.com/UPLOAD/ogg/0417.ogg"></audio>
         <audio id="randomAudio"></audio>
@@ -71,15 +74,20 @@
         <audio id="windNoise" src="https://bigsoundbank.com/UPLOAD/ogg/0146.ogg"></audio>
         <audio id="chainNoise" src="https://bigsoundbank.com/UPLOAD/ogg/0359.ogg"></audio>
         <audio id="gruntNoise" src="https://bigsoundbank.com/UPLOAD/ogg/0486.ogg"></audio>
-        <div>
-            <p>
-                'Put this shit in a butt! Ortherwise you will get cut!'
-            </p>
 
-        </div>
-    </body>
+    <div class="bottom-text">
+        <p>
+         'Put this shit in a butt! Ortherwise you will get cut!'
+        </p>
+    </div>
+    </div>
+</body>
     
     <footer>
+        <div class="footer">
+            <p class="copyright">&copy; The Squad 2020</p>
+            <p class="emailus">poopbutt@buttmail.com</p>
+        </div>
         <script>
             // When the user scrolls the page, execute myFunction
             window.onscroll = function() {myFunction()};
