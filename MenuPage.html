@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<link rel="stylesheet" type="text/css" href="menu_style.css"/>
+	<title>The Squad Page</title>
+	
+	<div class="header">
+	  <h1>Header</h1>
+	  <p class="subhead">Please. Regard Us.</p>
+	</div>
+	<div id="topnav">
+		  <a class="active" href="MenuPage.html">Home</a>
+		  <a href="DuckBoard.html">DuckBoard</a>
+		  <a href="#Ted">Ted</a>
+		  <a href="#Jake">Jake</a>
+		  <a href="#Chris">Chris</a>
+		  <a href="#Ross">Ross</a>
+		  <a href="#Mike">Mike</a>
+		  <a href="#contactus">Contact Us</a>
+		  <b style="float:right">Pick Your Poison</b>
+	</div>
+</head>
+<script type="text/javascript" src="script.js"></script>
+<body>
+
+	<div class="main">
+		Hello! And welcome to our page! We would like to thank you in advance for coming here, but more importantly we would like to warn you.  As you progress through this site you will be falling down the rabbit hole of the designer’s imaginations.  What you see may shock you, but you must remember this is purely for experimentation purposes only. 
+	</div>
+
+	<div class="main2">
+		Put some stuff in this paragraph so that we can explain whats going on here. Purple monkey diswasher!
+	</div>
+	
+	<div class="row">
+		<div class="column">
+			<h2>Column 1</h2>
+			<p>Some text..</p>
+		</div>
+
+		<div class="column">
+			<h2>Column 2</h2>
+			<p>Some text..</p>
+		</div>
+
+		<div class="column">
+			<h2>Column 3</h2>
+			<p>Some text..</p>
+		</div>
+
+		<div class="row">
+		<div class="column">
+			<h2>Column 4</h2>
+			<p>Some text..</p>
+		</div>
+
+		<div class="column">
+			<h2>Column 5</h2>
+			<p>Some text..</p>
+		</div>
+
+		<div class="column">
+			<h2>Column 6</h2>
+			<p>Some text..</p>
+		</div>
+	</div>
+
+</body>
+
+<footer>
+	<div class="footer">
+		<p class="copyright">&copy; The Squad 2020</p>
+		<p class="emailus">poopbutt@buttmail.com</p>
+	</div>
+	<script>
+		// When the user scrolls the page, execute myFunction
+		window.onscroll = function() {myFunction()};
+		
+		// Get the navbar
+		var topnav = document.getElementById("topnav");
+		
+		// Get the offset position of the navbar
+		var sticky = topnav.offsetTop;
+		
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				topnav.classList.add("sticky")
+			} else {
+				topnav.classList.remove("sticky");
+			}
+		}   
+	</script>
+</footer>
+
+</html>
