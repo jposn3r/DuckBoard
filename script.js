@@ -74,3 +74,9 @@ request.onload = function() {
 }
 
 request.send()
+
+// ----------------------------------------------------------------------------------------------
+// function to create email from conctact form
+function submitForm(){
+    console.log("titties")
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+        <title>Fire Ninja</title>
+        <div class="header">
+        <h1>Fire Ninja</h1>
+        <p class="subhead" style = "font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Below are Some Fire Ninjas For You</p>
+        </div>
+        <div id="topnav">
+            <a href="MenuPage.html">Home</a>
+            <a href="DuckBoard.html">DuckBoard</a>
+            <a class="nav-active" href="FireNinja.html">Fire Ninja</a>
+            <a href="DiceRoller.html">Dice Roller</a>
+            <a href="#Jake">Jake</a>
+            <a href="#Chris">Chris</a>
+            <a href="#Ross">Ross</a>
+            <a href="#Mike">Mike</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <b style="float:right">Pick Your Poison</b>
+        </div>
+    </head>
+    <script type="text/javascript" src="script.js"></script>
+    <body>
+        <div class="img-row">
+            <div class="img-column">
+              <img src="https://cdn.shopify.com/s/files/1/0706/8331/products/Soul-Of-Fire-Ninja-Collection-Black_3a6feaa6-2e4a-4a0e-a6ab-c620b09fc673.jpg?v=1578621111" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="img-column">
+              <img src="https://cdnb.artstation.com/p/assets/images/images/004/081/609/large/xiaojian-liu-.jpg?1480170786" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="img-column">
+              <img src="https://i.pinimg.com/originals/ab/8d/9f/ab8d9f794cbfb4b638b72f2ab7d73af7.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="img-column">
+              <img src="https://images.squarespace-cdn.com/content/v1/58a574eed482e94691e249a4/1565206852331-22QXX78WGONUSJP16JAT/ke17ZwdGBToddI8pDm48kJUlZr2Ql5GtSKWrQpjur5t7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UfNdxJhjhuaNor070w_QAc94zjGLGXCa1tSmDVMXf8RUVhMJRmnnhuU1v2M8fLFyJw/Fire-Ninja-02.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+          </div>
+          
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="https://cdn.shopify.com/s/files/1/0706/8331/products/Soul-Of-Fire-Ninja-Collection-Black_3a6feaa6-2e4a-4a0e-a6ab-c620b09fc673.jpg?v=1578621111" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="https://cdnb.artstation.com/p/assets/images/images/004/081/609/large/xiaojian-liu-.jpg?1480170786" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="https://i.pinimg.com/originals/ab/8d/9f/ab8d9f794cbfb4b638b72f2ab7d73af7.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="https://images.squarespace-cdn.com/content/v1/58a574eed482e94691e249a4/1565206852331-22QXX78WGONUSJP16JAT/ke17ZwdGBToddI8pDm48kJUlZr2Ql5GtSKWrQpjur5t7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UfNdxJhjhuaNor070w_QAc94zjGLGXCa1tSmDVMXf8RUVhMJRmnnhuU1v2M8fLFyJw/Fire-Ninja-02.jpg" style="width:100%">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <div class="caption-container">
+                <p id="caption" style = "font-family: monospace;">LOOK AT ALL THE FIRE NINJAS!</p>
+              </div>
+          
+          
+              <div class="img-column">
+                <img class="demo cursor" src="https://cdn.shopify.com/s/files/1/0706/8331/products/Soul-Of-Fire-Ninja-Collection-Black_3a6feaa6-2e4a-4a0e-a6ab-c620b09fc673.jpg?v=1578621111" style="width:100%" onclick="currentSlide(1)" alt="Scorpion Fire Ninja">
+              </div>
+              <div class="img-column">
+                <img class="demo cursor" src="https://cdnb.artstation.com/p/assets/images/images/004/081/609/large/xiaojian-liu-.jpg?1480170786" style="width:100%" onclick="currentSlide(2)" alt="Super Dope Fire Ninja">
+              </div>
+              <div class="img-column">
+                <img class="demo cursor" src="https://i.pinimg.com/originals/ab/8d/9f/ab8d9f794cbfb4b638b72f2ab7d73af7.jpg" style="width:100%" onclick="currentSlide(3)" alt="Jumping Fire Ninja">
+              </div>
+              <div class="img-column">
+                <img class="demo cursor" src="https://images.squarespace-cdn.com/content/v1/58a574eed482e94691e249a4/1565206852331-22QXX78WGONUSJP16JAT/ke17ZwdGBToddI8pDm48kJUlZr2Ql5GtSKWrQpjur5t7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UfNdxJhjhuaNor070w_QAc94zjGLGXCa1tSmDVMXf8RUVhMJRmnnhuU1v2M8fLFyJw/Fire-Ninja-02.jpg" style="width:100%" onclick="currentSlide(4)" alt="Fancy Fire Ninja">
+              </div>
+            </div>
+          </div>
+          <script>
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
+            }
+
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+
+                var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                    if (n > slides.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+          </script>
+    </body>
+  <footer>
+      <div class="footer">
+          <p class="copyright">&copy; The Squad 2020</p>
+          <p class="emailus">poopbutt@buttmail.com</p>
+      </div>
+      <script>
+          // When the user scrolls the page, execute myFunction
+          window.onscroll = function() {myFunction()};
+          
+          // Get the navbar
+          var topnav = document.getElementById("topnav");
+          
+          // Get the offset position of the navbar
+          var sticky = topnav.offsetTop;
+          
+          // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+          function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                  topnav.classList.add("sticky")
+              } else {
+                  topnav.classList.remove("sticky");
+              }
+          }   
+      </script>
+  </footer>
+</html>
