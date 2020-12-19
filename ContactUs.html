@@ -16,6 +16,7 @@
 		  <a href="MenuPage.html">Home</a>
 		  <a href="DuckBoard.html">DuckBoard</a>
 		  <a href="FireNinja.html">Fire Ninja</a>
+		  <a href="DiceRoller.html">Dice Roller</a>
 		  <a href="#Jake">Jake</a>
 		  <a href="#Chris">Chris</a>
 		  <a href="#Ross">Ross</a>
@@ -26,12 +27,19 @@
 </head>
 <script type="text/javascript" src="script.js"></script>
 <body>
-
-	<div>	
-		
-	</div>
+	<center>
+		<div class = "box-input">	
+			<input type="text" id="firstName" name="firstname" placeholder="First Name">	
+			<input type="text" id="lastName" name="lastname" placeholder="Last Name">
+			<input type="text" id="email" name="email" placeholder="Email">
+			<input type="text" id="subject" name="subject" placeholder="Subject">
+			<label for="subject"></label>
+			<textarea id="message" name="message" placeholder="Message" style="height:300px"></textarea>
+			<br/>
+			<button onclick="submitForm()">Submit</button>
+		</div>
+	</center>
 </body>
-
 <footer>
 	<div class="footer">
 		<p class="copyright">&copy; The Squad 2020</p>
